@@ -17,4 +17,6 @@ fi
 ( git fetch origin master
 git branch master FETCH_HEAD ) &
 
+./test/setup.sh
+
 set +o xtrace
