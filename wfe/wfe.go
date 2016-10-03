@@ -1269,8 +1269,6 @@ func (wfe *WebFrontEndImpl) Authorization(ctx context.Context, logEvent *request
 	}
 }
 
-var allHex = regexp.MustCompile("^[0-9a-f]+$")
-
 // Certificate is used by clients to request a copy of their current certificate, or to
 // request a reissuance of the certificate.
 func (wfe *WebFrontEndImpl) Certificate(ctx context.Context, logEvent *requestEvent, response http.ResponseWriter, request *http.Request) {
